@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  padding: 10px 10%;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #2B3A55;
+  position: relative;
+  cursor: pointer;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: 9px;
+  right: -14px;
+  background-color: #379777;
+  height: 12px;
+  width: 12px;
+  border-radius: 15px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-bar a {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: rgba(43, 58, 85, 0.8);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nav-bar a:hover {
+  color: #379777;
+}
+
+.cta-btn {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: white;
+  background-color: #379777;
+  padding: 7px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cta-btn:hover {
+  background-color: #2B3A55;
+}
+
+/* Contents */
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  height: 80vh;
+  margin-top: 50px;
+}
+
+/* Right-section */
+.right-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Phat-img {
+  width: 130%;
+  position: absolute;
+  bottom: -11%;
+  right: -20%;
+  transform: rotateY(180deg);
+}
+
+/* Left-section */
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.left-content h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: rgba(43, 58, 85, 0.8);
+}
+
+.left-content h1 {
+  font-size: 8rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  color: rgba(43, 58, 85, 0.9);
+  margin: -10px 0 0 0;
+}
+
+h1 span {
+  color: #379777;
+}
+
+.left-content p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: rgba(43, 58, 85, 0.7);
+  margin-bottom: 40px;
+  width: 90%;
+}
+
+.left-content-wrap {
+  margin-top: 40px;
+}
+
+.cta {
+  display: flex;
+  gap: 50px;
+}
+
+.big-cta {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  height: 50px;
+  width: 250px;
+  background-color: #2B3A55;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 15px 10px #2b3a5541;
+}
+
+.cta-2 {
+  background-color: transparent;
+  color: #2B3A55;
+  border: 2px solid #2B3A55;
+}
+
+.big-cta i {
+  font-size: 19px;
+  margin-left: 5px;
+}
+
+.cta-1:hover {
+  background-color: #379777;
+}
+
+.cta-2:hover {
+  background-color: #379777;
+  color: white;
+  border-color: #379777;
+}
+
+/* social  */
+
+.socials {
+  position:relative;
+  display: flex;
+  gap: 20px;
+  width: 110%;
+  justify-content: flex-end;
+}
+
+.socials i {
+  font-size: 19px;
+  font-weight: 600;
+  color: #2B3A55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #2B3A55;
+  height: 20px;
+  width: 20px;
+  padding: 7px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  z-index: 1;
+}
+
+.socials i:hover {
+  color: #379777;
+  border-color: #379777;
+  transform: scale(1.1) rotate(360deg);
+}
+
+/* Background effects */
+
+body::before {
+  content: " ";
+  position: absolute;
+  bottom: -16%;
+  left: -6%;
+  height: 500px;
+  width: 500px;
+  border-radius: 300px;
+  background: linear-gradient(45deg, #379777 60%, #b3ffe2);
+  z-index: -1;
+}
+
+body::after {
+  content: " ";
+  position: absolute;
+  top: 12%;
+  left: 37%;
+  height: 180px;
+  width: 180px;
+  border-radius: 300px;
+  background: linear-gradient(45deg, #b3ffe2, #379777 50%);
+  z-index: -1;
+}
+
+.scratch-img {
+  width: 175%;
+  position: absolute;
+  top: 15%;
+  right: -52%;
+  z-index: -1;
+}
+
+/* Animation */
+@keyframes topBall {
+  0% {
+    transform: translateY(0);
+  }
+
+  25% {
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bottomBall {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+
+  50% {
+    transform: translateY(15%) translateX(-15%);
+  }
+
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes scratchImg {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(-2%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+/* Applaying Animation */
+body::after {
+  animation: topBall 10s linear infinite;
+}
+
+body::before {
+  animation: bottomBall 20s ease-in-out infinite;
+}
+
+.scratch-img {
+  animation: scratchImg 30s ease-in-out infinite;
+}
+
+/* Loading Animations */
+
+@keyframes fadeInBottom {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.left-content h3 {
+  animation: fadeInBottom 1s ease-out forwards;
+  opacity: 0;
+}
+
+.left-content h1 {
+  animation: fadeInBottom 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.left-content p {
+  animation: fadeInBottom 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+
+.big-cta {
+  animation: fadeInBottom 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+@keyframes lenaImage {
+  from {
+    transform: scale(0.8) translateY(10%);
+  }
+
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+
+.lena-img {
+  animation: lenaImage 1.4s ease-out forwards;
+}
+
+@keyframes topIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  animation: topIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.socials {
+  animation: fadeInBottom 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
